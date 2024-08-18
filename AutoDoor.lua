@@ -25,7 +25,7 @@ function main()
     end)
 
 	while true do wait(333) 
-		if ((isMonetLoader()) or (not sampIsChatInputActive() and not sampIsDialogActive() and not isSampfuncsConsoleActive() and not sampIsCursorActive())) then
+		if (use_autodoor and ((isMonetLoader()) or (not sampIsChatInputActive() and not sampIsDialogActive() and not isSampfuncsConsoleActive() and not sampIsCursorActive()))) then
             pcall(AutoDoor) 
 		end
 	end
